@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lumina ? Global Digital Marketing + AI</title>
+    <meta name="description" content="A cinematic, ultra-modern AI-driven marketing artwork. Export in 4K." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:title" content="Lumina ? Global Digital Marketing + AI" />
+    <meta property="og:description" content="Cinematic AI marketing artwork with holographic interfaces, data waves, and global connectivity." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://agentic-e8baeeed.vercel.app/og.png" />
+    <meta name="theme-color" content="#0a1024" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-label="Futuristic AI Marketing Artwork">
+        <canvas id="artboard" aria-hidden="true"></canvas>
+
+        <div class="overlay">
+          <div class="brand">
+            <span class="brand-pill">AI-DRIVEN</span>
+            <h1 class="brand-title"><span class="accent">Lumina</span> Intelligence</h1>
+            <p class="brand-sub">Global digital marketing. Human connection. Exponential growth.</p>
+          </div>
+
+          <div class="cta">
+            <button id="export4k" class="btn primary">Export 4K PNG</button>
+            <button id="export1080" class="btn">Export 1080p PNG</button>
+          </div>
+        </div>
+
+        <svg class="globe" viewBox="0 0 600 600" role="img" aria-label="Holographic globe">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#5af3ff" stop-opacity="0.9" />
+              <stop offset="60%" stop-color="#00c2ff" stop-opacity="0.15" />
+              <stop offset="100%" stop-color="#00c2ff" stop-opacity="0.0" />
+            </radialGradient>
+            <linearGradient id="grid" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#9be8ff" />
+              <stop offset="100%" stop-color="#00d1ff" />
+            </linearGradient>
+          </defs>
+          <circle cx="300" cy="300" r="180" fill="url(#glow)" />
+          <!-- Latitude lines -->
+          <g stroke="url(#grid)" stroke-width="0.8" opacity="0.8">
+            <ellipse cx="300" cy="300" rx="170" ry="30" />
+            <ellipse cx="300" cy="300" rx="160" ry="70" />
+            <ellipse cx="300" cy="300" rx="140" ry="110" />
+          </g>
+          <!-- Longitude arcs -->
+          <g class="rotate" stroke="url(#grid)" stroke-width="0.8" opacity="0.8">
+            <path d="M300,120 A180,180 0 0,1 300,480" fill="none" />
+            <path d="M180,300 A180,180 0 0,1 420,300" fill="none" />
+            <path d="M220,180 A180,180 0 0,1 380,420" fill="none" />
+          </g>
+          <!-- Orbiting data node -->
+          <circle class="data-node" cx="300" cy="120" r="5" fill="#e8f9ff" />
+        </svg>
+
+        <div class="hud">
+          <div class="panel">
+            <span class="label">Global Reach</span>
+            <div class="bars">
+              <span style="--v:88%"></span>
+              <span style="--v:64%"></span>
+              <span style="--v:92%"></span>
+              <span style="--v:73%"></span>
+            </div>
+          </div>
+          <div class="panel">
+            <span class="label">AI Conversion Lift</span>
+            <div class="line"><span></span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js" type="module"></script>
+  </body>
+</html>
